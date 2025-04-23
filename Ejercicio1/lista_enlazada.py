@@ -1,6 +1,6 @@
 '''Una escuela de educacion primaria requiere un algoritmo que muestre los datos de los estudiantes de un salon de clase ordenados de forma ascendente, segun un parametro indicado; 
 este parametro puede ser cualquiera de los siguientes campos: carnet, nombres, apellidos, peso, estatura, sexo, promedio'''
-
+#Se importan las clases necesarias
 from nodo import Nodo
 #La clase listaEnlazada gestiona la estructura de datos basada en nodos
 class ListaEnlazada:
@@ -23,7 +23,7 @@ class ListaEnlazada:
         while actual: #Mientras la lista no este vacia recorre la lista hasta el final
             estudiantes.append(actual.estudiante) #Agrega los datos del estudiante al final de la lista
             actual = actual.siguiente
-        return estudiantes
+        return estudiantes #Se devuelve la lista de estudiantes
     #Ordenar los nodos de la lista segun un atributo (parametro indicado)
     def ordenar_por(self, atributo):
         estudiantes = self.recorrer() #Obtener lista de estudiantes
